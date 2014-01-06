@@ -1,6 +1,7 @@
 #this is just some code for an example 
 #when working with github
-for x in range(1,10):
-   print x*99
+import subprocess
 
+weather=subprocess.check_output(["weather", "-iKAUS"])
 
+print "Current weather for Austin:\n\n%s" % weather
